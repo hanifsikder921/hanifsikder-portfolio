@@ -10,14 +10,14 @@ const Navbar = () => {
 
 
 
-      
+
 
         <li className='hover:bg-emerald-700 hover:rounded-md duration-300 flex items-center justify-center'>
             <ScrollLink
                 to="home-section"
                 smooth={true}
                 duration={500}
-                offset={-70}
+                offset={-80}
                 className="cursor-pointer text-white hover:underline"
                 activeClass="text-yellow-300 underline"
                 spy={true}
@@ -30,7 +30,7 @@ const Navbar = () => {
                 to="service-section"
                 smooth={true}
                 duration={500}
-                offset={-70}
+                offset={-80}
                 className="cursor-pointer text-white hover:underline"
                 activeClass="text-yellow-300 underline"
                 spy={true}
@@ -38,13 +38,13 @@ const Navbar = () => {
                 Service
             </ScrollLink>
         </li>
-        
+
         <li className='hover:bg-emerald-700 hover:rounded-md duration-300 flex items-center justify-center'>
             <ScrollLink
                 to="projects-section"
                 smooth={true}
                 duration={500}
-                offset={-70}
+                offset={-80}
                 className="cursor-pointer text-white hover:underline"
                 activeClass="text-yellow-300 underline"
                 spy={true}
@@ -58,7 +58,7 @@ const Navbar = () => {
                 to="faq-section"
                 smooth={true}
                 duration={500}
-                offset={-70}
+                offset={-80}
                 className="cursor-pointer text-white hover:underline"
                 activeClass="text-yellow-300 underline"
                 spy={true}
@@ -71,7 +71,7 @@ const Navbar = () => {
                 to="about-section"
                 smooth={true}
                 duration={500}
-                offset={-70}
+                offset={-100}
                 className="cursor-pointer text-white hover:underline"
                 activeClass="text-yellow-300 underline"
                 spy={true}
@@ -81,17 +81,18 @@ const Navbar = () => {
         </li>
 
 
-       
 
 
 
-    
+
+
+
 
 
 
     </div>
     return (
-        <div className=' bg-emerald-500 '>
+        <div className=' bg-emerald-500'>
 
             <div className="navbar p-0 md:p-2 md:w-11/12 mx-auto">
                 <div className="navbar-start md:w-[50%] w-[65%]">
@@ -105,7 +106,9 @@ const Navbar = () => {
                             {navMenu}
                         </ul>
                     </div>
-                    <Link className="text-xl md:text-4xl font-bold text-white">Hanif <span className='text-yellow-300'>S</span>ikder</Link>
+                    <ScrollLink to='home-section' smooth={true}
+                        duration={500}
+                        offset={-100} spy={true} className="text-xl md:text-4xl font-bold text-white cursor-pointer">Hanif <span className='text-yellow-300'>S</span>ikder</ScrollLink>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
@@ -113,7 +116,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end md:w-[50%] w-[35%] md:pr-0 pr-2">
-                    <ScrollLink  to='contact-section' className='bg-white cursor-pointer text-emerald-500 font-semibold md:px-5 md:py-3 md:text-xl md:rounded-full  rounded-xl p-2 text-base hover:bg-gray-200 duration-200'>Contact Me</ScrollLink>
+                    <ScrollLink to='contact-section' className='bg-white cursor-pointer text-emerald-500 font-semibold md:px-5 md:py-3 md:text-xl md:rounded-full  rounded-xl p-2 text-base hover:bg-gray-200 duration-200'>Contact Me</ScrollLink>
                 </div>
             </div>
         </div>

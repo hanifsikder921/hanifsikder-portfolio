@@ -9,7 +9,7 @@ const MainLayout = () => {
     return (
         <div>
 
-            <header className='sticky z-50 top-0'>
+            <header className='sticky z-50 top-0 '>
                <Navbar></Navbar>
             </header>
 

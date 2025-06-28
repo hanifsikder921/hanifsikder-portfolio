@@ -3,8 +3,7 @@ import MainLayout from './../layouts/MainLayout';
 import AuthencationLayout from './../layouts/AuthencationLayout';
 import Login from './../pages/Login/Login';
 import Register from './../pages/Register/Register';
-import About from "../pages/About/About";
-import ContactUs from "../pages/Contact/ContactUs";
+
 import Home from "../pages/Home/Home/Home";
 
 
@@ -18,16 +17,8 @@ const router = createBrowserRouter([
                 index:true,
                 Component: Home,
             },
-            {
-                path:'/about',
-                Component:About
-
-            },
-            {
-                path:'/contact',
-                Component:ContactUs
-
-            }
+            
+           
             
 
         ]

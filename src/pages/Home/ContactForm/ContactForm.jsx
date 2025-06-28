@@ -25,7 +25,7 @@ const ContactForm = () => {
         // Step 2: If confirmed
         if (result.isConfirmed) {
             try {
-                const response = await axios.post('http://localhost:5000/contact', data);
+                const response = await axios.post('https://portfolio-backend-nu-sage.vercel.app/contact', data);
 
                 if (response.data.success) {
                     Swal.fire({

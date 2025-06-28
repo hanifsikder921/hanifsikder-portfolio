@@ -11,11 +11,15 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 // ✅ Initialize AOS before app renders
-AOS.init({
-  duration: 800,
-  once: false,
-  easing: 'ease-in-out',
-});
+
+  AOS.init({
+    duration: 800,
+    easing: 'ease-in-out',
+    once: false,
+ 
+  });
+
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
