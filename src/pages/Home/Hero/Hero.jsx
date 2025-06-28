@@ -1,8 +1,9 @@
 import React from 'react';
-import { Typewriter } from 'react-simple-typewriter'; 
+import { Typewriter } from 'react-simple-typewriter';
 import profileImage from '../../../assets/profile.png'
 import CustomButton from '../../../components/Shared/CustomButton';
 import DownloadButton from '../../../components/Shared/DownloadButton';
+import { motion } from 'framer-motion';
 
 const Hero = () => {
     return (
@@ -15,11 +16,11 @@ const Hero = () => {
                     <p>
                         I craft responsive UIs as a{" "}
                         <span className="text-green-400 font-semibold">Frontend Developer</span>.
-                       
+
                     </p>
                     <p className='min-h-25'>
                         and build scalable apps as a{" "}
-                          <span className="text-blue-400 font-semibold">
+                        <span className="text-blue-400 font-semibold">
                             <Typewriter
                                 words={['MERN Stack Developer']}
                                 loop={true}
@@ -31,7 +32,7 @@ const Hero = () => {
                                 delaySpeed={1500}
                             />
                         </span>
-                      
+
                     </p>
                 </div>
 
@@ -45,11 +46,24 @@ const Hero = () => {
                 </div>
             </section>
 
+            
+
             <section className='flex-1'>
                 <div className='md:w-[500px] w-80 mx-auto'>
-                    <img src={profileImage} alt="Hanif Sikder Image" />
+                    <motion.img
+                        src={profileImage}
+                        alt="Hanif Sikder Image"
+                        className="w-full"
+                        animate={{ x: [-10, 10, -10] }}
+                        transition={{
+                            repeat: Infinity,
+                            duration: 4,
+                            ease: 'easeInOut'
+                        }}
+                    />
                 </div>
             </section>
+
         </div>
     );
 };

@@ -2,6 +2,7 @@ import React from 'react';
 import Hero from '../Hero/Hero';
 import Framework from '../Framework/Framework';
 import MyService from '../Service/MyService';
+import MyLatestProject from '../LatestProject/MyLatestProject';
 
 const Home = () => {
     return (
@@ -12,6 +13,8 @@ const Home = () => {
            <Framework/>
 
            <MyService/>
+
+           <MyLatestProject/>
 
         </div>
     );
