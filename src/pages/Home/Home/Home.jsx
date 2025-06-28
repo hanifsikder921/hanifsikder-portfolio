@@ -1,6 +1,7 @@
 import React from 'react';
 import Hero from '../Hero/Hero';
 import Framework from '../Framework/Framework';
+import MyService from '../Service/MyService';
 
 const Home = () => {
     return (
@@ -9,6 +10,8 @@ const Home = () => {
            <Hero/>
 
            <Framework/>
+
+           <MyService/>
 
         </div>
     );

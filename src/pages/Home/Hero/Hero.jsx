@@ -6,7 +6,7 @@ import DownloadButton from '../../../components/Shared/DownloadButton';
 
 const Hero = () => {
     return (
-        <div className='md:my-20 flex md:flex-row flex-col-reverse items-center'>
+        <div className='md:my-20 flex md:flex-row flex-col-reverse items-center '>
             <section className='flex-1'>
                 <h2 className='text-2xl'>Hello There !</h2>
 
@@ -17,7 +17,7 @@ const Hero = () => {
                         <span className="text-green-400 font-semibold">Frontend Developer</span>.
                        
                     </p>
-                    <p>
+                    <p className='min-h-25'>
                         and build scalable apps as a{" "}
                           <span className="text-blue-400 font-semibold">
                             <Typewriter

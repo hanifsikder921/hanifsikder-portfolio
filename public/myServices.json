@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "Responsive Website Design",
+    "description": "Mobile-first, cross-device compatible websites using HTML5, CSS3 & Tailwind CSS.",
+    "image": "https://cdn.dribbble.com/userupload/20235438/file/original-c39105aa8112fb4a9cade506c98ac423.gif"
+  },
+  {
+    "id": 2,
+    "title": "Modern Frontend Development",
+    "description": "Interactive and dynamic frontend development with React.js and JavaScript ES6+.",
+    "image": "https://i.ibb.co/VWWmvqwM/b9e4960c1476c78043d499d975f86cdb.gif"
+  },
+  {
+    "id": 3,
+    "title": "Single Page Application (SPA)",
+    "description": "Build fast, scalable SPAs using React Router and reusable component structures.",
+    "image": "https://i.ibb.co/SXqVfkPk/1729489467145-e-2147483647-v-beta-t-POu-JMPrnx-PLYSt9-Bbu4ooeof-QUbcn0fjn-HHi-Sr-Rk-XYs.png"
+  },
+  {
+    "id": 4,
+    "title": "Custom UI Components",
+    "description": "Craft custom, accessible and reusable UI components tailored to your project needs.",
+    "image": "https://i.ibb.co/r2brrXXq/1-m-KQv-OJs3-Hr-IFk-A8-Krx-VQ5w.gif"
+  },
+  {
+    "id": 5,
+    "title": "Firebase Authentication & Hosting",
+    "description": "Google Firebase setup including Email/Password, Google Login & deployment.",
+    "image": "https://i.ibb.co/XxSsQKf3/0-pigb9-Ep-YRdz-Tu-MIX.gif"
+  },
+  {
+    "id": 6,
+    "title": "Backend with Node & Express",
+    "description": "Create RESTful APIs and server-side logic using Node.js and Express.js.",
+    "image": "https://i.ibb.co/jvtKwXLz/1-LGNLwf-3dknhu1m-Mal-KDJQ.gif"
+  },
+  {
+    "id": 7,
+    "title": "MongoDB Database Integration",
+    "description": "Database design, schema modeling, and CRUD operations using MongoDB.",
+    "image": "https://i.ibb.co/N6n7w3Xf/0-YCNr1-bw-A6w-P3-Ko-E.gif"
+  },
+  {
+    "id": 8,
+    "title": "Full-Stack MERN Development",
+    "description": "End-to-end MERN stack development combining MongoDB, Express, React, and Node.",
+    "image": "https://i.ibb.co/cXTNrbbg/97639-coding.gif"
+  }
+]
