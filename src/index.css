@@ -1,0 +1,7 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+a.active {
+    @apply text-white;
+  }
+  
