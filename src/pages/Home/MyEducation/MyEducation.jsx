@@ -26,7 +26,7 @@ const MyEducation = () => {
 
     return (
         <div className="py-10 bg-gray-100 my-15 rounded-lg">
-            <h2 className="text-3xl font-bold text-center mb-8">My Education</h2>
+            <h2 className="text-3xl font-bold text-center mb-8 text-emerald-600">My Education</h2>
             <p className="text-center text-gray-600 max-w-2xl mx-auto mb-8">
                 My educational journey has built a strong foundation for both technical knowledge and creative thinking, enabling me to grow as a modern web developer.
             </p>

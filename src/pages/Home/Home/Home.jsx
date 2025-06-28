@@ -4,6 +4,7 @@ import Framework from '../Framework/Framework';
 import MyService from '../Service/MyService';
 import MyLatestProject from '../LatestProject/MyLatestProject';
 import MyEducation from '../MyEducation/MyEducation';
+import PricingTable from '../Pricing/PricingTable';
 
 const Home = () => {
     return (
@@ -18,6 +19,8 @@ const Home = () => {
            <MyLatestProject/>
 
            <MyEducation/>
+
+           <PricingTable/>
 
         </div>
     );

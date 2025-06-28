@@ -14,7 +14,7 @@ const MyLatestProject = () => {
 
     return (
         <div className="py-10 bg-gray-100 rounded-lg">
-            <h2 className="text-3xl font-bold text-center mb-10">My Latest Projects</h2>
+            <h2 className="text-3xl font-bold text-center mb-10 text-emerald-600">My Latest Projects</h2>
             <p className="text-center text-gray-600 max-w-2xl mx-auto mb-8">
                 Here are some of my recent web development projects that showcase my skills in frontend and full-stack development.
             </p>
