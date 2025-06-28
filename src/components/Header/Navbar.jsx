@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router';
 import { IoMenuSharp } from "react-icons/io5";
+import { Link as ScrollLink } from 'react-scroll';
+
 
 const Navbar = () => {
 
@@ -8,18 +10,88 @@ const Navbar = () => {
 
 
 
-        <li className='hover:bg-emerald-700 hover:rounded-md duration-300 flex items-center justify-center'><NavLink to="/" className={({ isActive }) => isActive ? "text-yellow-300 underline " : "text-white"}>Home</NavLink></li>
-        <li className='hover:bg-emerald-700 hover:rounded-md duration-300 flex items-center justify-center'><NavLink to="/service" className={({ isActive }) => isActive ? "text-yellow-300 underline " : "text-white"}  >Service</NavLink></li>
-        <li className='hover:bg-emerald-700 hover:rounded-md duration-300 flex items-center justify-center'><NavLink to="/about" className={({ isActive }) => isActive ? "text-yellow-300 underline " : "text-white"}  >About</NavLink></li>
-        <li className='hover:bg-emerald-700 hover:rounded-md duration-300 flex items-center justify-center'><NavLink to="/projects" className={({ isActive }) => isActive ? "text-yellow-530 underline " : "text-white"} >Projects</NavLink></li>
-        <li className='hover:bg-emerald-700 hover:rounded-md duration-300 flex items-center justify-center'><NavLink to="/blog" className={({ isActive }) => isActive ? "text-yellow-300 underline " : "text-white"} >Blog</NavLink></li>
-        <li className='hover:bg-emerald-700 hover:rounded-md duration-300 flex items-center justify-center'><NavLink to="/testimonials" className={({ isActive }) => isActive ? "text-yellow-300 underline " : "text-white"} >Testimonials</NavLink></li>
+      
+
+        <li className='hover:bg-emerald-700 hover:rounded-md duration-300 flex items-center justify-center'>
+            <ScrollLink
+                to="home-section"
+                smooth={true}
+                duration={500}
+                offset={-70}
+                className="cursor-pointer text-white hover:underline"
+                activeClass="text-yellow-300 underline"
+                spy={true}
+            >
+                Home
+            </ScrollLink>
+        </li>
+        <li className='hover:bg-emerald-700 hover:rounded-md duration-300 flex items-center justify-center'>
+            <ScrollLink
+                to="service-section"
+                smooth={true}
+                duration={500}
+                offset={-70}
+                className="cursor-pointer text-white hover:underline"
+                activeClass="text-yellow-300 underline"
+                spy={true}
+            >
+                Service
+            </ScrollLink>
+        </li>
+        
+        <li className='hover:bg-emerald-700 hover:rounded-md duration-300 flex items-center justify-center'>
+            <ScrollLink
+                to="projects-section"
+                smooth={true}
+                duration={500}
+                offset={-70}
+                className="cursor-pointer text-white hover:underline"
+                activeClass="text-yellow-300 underline"
+                spy={true}
+            >
+                Projects
+            </ScrollLink>
+        </li>
+
+        <li className='hover:bg-emerald-700 hover:rounded-md duration-300 flex items-center justify-center'>
+            <ScrollLink
+                to="faq-section"
+                smooth={true}
+                duration={500}
+                offset={-70}
+                className="cursor-pointer text-white hover:underline"
+                activeClass="text-yellow-300 underline"
+                spy={true}
+            >
+                FAQ
+            </ScrollLink>
+        </li>
+        <li className='hover:bg-emerald-700 hover:rounded-md duration-300 flex items-center justify-center'>
+            <ScrollLink
+                to="about-section"
+                smooth={true}
+                duration={500}
+                offset={-70}
+                className="cursor-pointer text-white hover:underline"
+                activeClass="text-yellow-300 underline"
+                spy={true}
+            >
+                About Me
+            </ScrollLink>
+        </li>
+
+
+       
+
+
+
+    
 
 
 
     </div>
     return (
-        <div className=' bg-emerald-500'>
+        <div className=' bg-emerald-500 '>
 
             <div className="navbar p-0 md:p-2 md:w-11/12 mx-auto">
                 <div className="navbar-start md:w-[50%] w-[65%]">
@@ -41,7 +113,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end md:w-[50%] w-[35%] md:pr-0 pr-2">
-                    <Link className='bg-white text-emerald-500 font-semibold md:px-5 md:py-3 md:text-xl md:rounded-full  rounded-xl p-2 text-base hover:bg-gray-200 duration-200'>Contact Me</Link>
+                    <ScrollLink  to='contact-section' className='bg-white cursor-pointer text-emerald-500 font-semibold md:px-5 md:py-3 md:text-xl md:rounded-full  rounded-xl p-2 text-base hover:bg-gray-200 duration-200'>Contact Me</ScrollLink>
                 </div>
             </div>
         </div>

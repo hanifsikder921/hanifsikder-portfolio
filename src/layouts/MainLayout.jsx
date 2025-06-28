@@ -1,6 +1,7 @@
 import React from 'react';
 import { Outlet } from 'react-router';
 import Navbar from '../components/Header/Navbar';
+import Footer from '../pages/Footer/Footer';
 
 
 
@@ -8,7 +9,7 @@ const MainLayout = () => {
     return (
         <div>
 
-            <header>
+            <header className='sticky z-50 top-0'>
                <Navbar></Navbar>
             </header>
 
@@ -21,6 +22,8 @@ const MainLayout = () => {
                 </section>
 
             </main>
+
+            <Footer/>
 
 
 

@@ -26,14 +26,15 @@ const MyEducation = () => {
 
     return (
         <div className="py-10 bg-gray-100 my-15 rounded-lg">
-            <h2 className="text-3xl font-bold text-center mb-8 text-emerald-600">My Education</h2>
-            <p className="text-center text-gray-600 max-w-2xl mx-auto mb-8">
+            <h2 data-aos="flip-left" className="text-3xl font-bold text-center mb-8 text-emerald-600">My Education</h2>
+            <p data-aos="zoom-out" className="text-center text-gray-600 max-w-2xl mx-auto mb-8">
                 My educational journey has built a strong foundation for both technical knowledge and creative thinking, enabling me to grow as a modern web developer.
             </p>
 
             <div className="max-w-7xl mx-auto px-4 grid gap-6 md:grid-cols-2">
                 {educationData.map((edu, index) => (
                     <div
+                        data-aos="fade-up"
                         key={index}
                         className="bg-white rounded-lg shadow p-6 border-l-4 border-emerald-500 md:min-h-auto min-h-56 flex flex-col items-center md:justify-start md:items-start justify-center"
                     >

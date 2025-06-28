@@ -43,7 +43,7 @@ const pricingPlans = [
 const PricingTable = () => {
   return (
     <div className="py-14 bg-gray-100 rounded-lg">
-      <h2 className="text-3xl font-bold text-center mb-4 text-emerald-600">My Pricing Plans</h2>
+      <h2 data-aos="flip-up" className="text-3xl font-bold text-center mb-4 text-emerald-600">My Pricing Plans</h2>
       <p className="text-center text-gray-600 max-w-xl mx-auto mb-10">
         Choose a plan that suits your project timeline and budget. I offer flexible pricing for hourly, daily, and long-term development needs.
       </p>
@@ -51,6 +51,7 @@ const PricingTable = () => {
       <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto px-6">
         {pricingPlans.map(plan => (
           <div
+            data-aos="zoom-in"
             key={plan.id}
             className="bg-white  rounded-lg shadow-sm p-6 hover:shadow-xl transition duration-300"
           >

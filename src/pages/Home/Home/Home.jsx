@@ -5,6 +5,9 @@ import MyService from '../Service/MyService';
 import MyLatestProject from '../LatestProject/MyLatestProject';
 import MyEducation from '../MyEducation/MyEducation';
 import PricingTable from '../Pricing/PricingTable';
+import ContactForm from '../ContactForm/ContactForm';
+import FaqSection from '../FaqSection/FaqSection';
+import About from '../../About/About';
 
 const Home = () => {
     return (
@@ -21,6 +24,12 @@ const Home = () => {
            <MyEducation/>
 
            <PricingTable/>
+
+           <ContactForm/>
+
+           <FaqSection/>
+
+           <About/>
 
         </div>
     );

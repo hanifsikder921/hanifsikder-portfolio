@@ -1,9 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router'; // ✅ Use react-router-dom
+import { Link as ScrollLink } from 'react-scroll';
 
 const DownloadButton = ({ text, location }) => {
   return (
-    <Link
+    <ScrollLink
+      data-aos="zoom-in"
       to={location}
       className="relative inline-flex items-center justify-center px-12 py-3 overflow-hidden text-lg font-medium text-indigo-600 border-2 border-indigo-600 rounded-full hover:text-white group"
     >
@@ -27,7 +28,7 @@ const DownloadButton = ({ text, location }) => {
       </span>
 
       <span className="relative z-10">{text}</span>
-    </Link>
+    </ScrollLink>
   );
 };
 

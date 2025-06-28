@@ -1,10 +1,20 @@
 import React from 'react';
-import { Link } from 'react-router'; // ✅ Correct import
 
-const CustomButton = ({ text, location }) => {
+const CustomButton = ({ text, cvUrl }) => {
+  const handleDownload = () => {
+    // Create a temporary anchor element
+    const link = document.createElement('a');
+    link.href = cvUrl;
+    link.download = 'Hanif_Sikder_CV.pdf'; // You can set the default filename here
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
-    <Link
-      to={location}
+    <button
+    data-aos="zoom-in"
+      onClick={handleDownload}
       className="relative bg-emerald-500 inline-flex items-center justify-center px-8 py-3 overflow-hidden text-lg font-medium text-white border border-emerald-600 rounded-full group hover:text-white transition-all duration-300"
     >
       {/* Hover background effect */}
@@ -12,7 +22,7 @@ const CustomButton = ({ text, location }) => {
 
       {/* Text layer */}
       <span className="relative z-10">{text}</span>
-    </Link>
+    </button>
   );
 };
 
