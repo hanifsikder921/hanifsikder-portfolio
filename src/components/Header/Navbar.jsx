@@ -8,12 +8,12 @@ const Navbar = () => {
 
 
 
-        <li className='hover:bg-emerald-700 hover:rounded-md duration-300 flex items-center justify-center'><NavLink to="/" className={({ isActive }) => isActive ? "text-yellow-300 underline " : "text-gray-200"}>Home</NavLink></li>
-        <li className='hover:bg-emerald-700 hover:rounded-md duration-300 flex items-center justify-center'><NavLink to="/service" className={({ isActive }) => isActive ? "text-yellow-300 underline " : "text-gray-200"}  >Service</NavLink></li>
-        <li className='hover:bg-emerald-700 hover:rounded-md duration-300 flex items-center justify-center'><NavLink to="/about" className={({ isActive }) => isActive ? "text-yellow-300 underline " : "text-gray-200"}  >About</NavLink></li>
-        <li className='hover:bg-emerald-700 hover:rounded-md duration-300 flex items-center justify-center'><NavLink to="/projects" className={({ isActive }) => isActive ? "text-yellow-530 underline " : "text-gray-200"} >Projects</NavLink></li>
-        <li className='hover:bg-emerald-700 hover:rounded-md duration-300 flex items-center justify-center'><NavLink to="/blog" className={({ isActive }) => isActive ? "text-yellow-300 underline " : "text-gray-200"} >Blog</NavLink></li>
-        <li className='hover:bg-emerald-700 hover:rounded-md duration-300 flex items-center justify-center'><NavLink to="/testimonials" className={({ isActive }) => isActive ? "text-yellow-300 underline " : "text-gray-200"} >Testimonials</NavLink></li>
+        <li className='hover:bg-emerald-700 hover:rounded-md duration-300 flex items-center justify-center'><NavLink to="/" className={({ isActive }) => isActive ? "text-yellow-300 underline " : "text-white"}>Home</NavLink></li>
+        <li className='hover:bg-emerald-700 hover:rounded-md duration-300 flex items-center justify-center'><NavLink to="/service" className={({ isActive }) => isActive ? "text-yellow-300 underline " : "text-white"}  >Service</NavLink></li>
+        <li className='hover:bg-emerald-700 hover:rounded-md duration-300 flex items-center justify-center'><NavLink to="/about" className={({ isActive }) => isActive ? "text-yellow-300 underline " : "text-white"}  >About</NavLink></li>
+        <li className='hover:bg-emerald-700 hover:rounded-md duration-300 flex items-center justify-center'><NavLink to="/projects" className={({ isActive }) => isActive ? "text-yellow-530 underline " : "text-white"} >Projects</NavLink></li>
+        <li className='hover:bg-emerald-700 hover:rounded-md duration-300 flex items-center justify-center'><NavLink to="/blog" className={({ isActive }) => isActive ? "text-yellow-300 underline " : "text-white"} >Blog</NavLink></li>
+        <li className='hover:bg-emerald-700 hover:rounded-md duration-300 flex items-center justify-center'><NavLink to="/testimonials" className={({ isActive }) => isActive ? "text-yellow-300 underline " : "text-white"} >Testimonials</NavLink></li>
 
 
 
@@ -41,7 +41,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end md:w-[50%] w-[35%] md:pr-0 pr-2">
-                    <Link className='bg-gray-100 text-emerald-500 font-semibold md:px-5 md:py-3 md:text-xl md:rounded-full  rounded-xl p-2 text-base'>Contact Me</Link>
+                    <Link className='bg-white text-emerald-500 font-semibold md:px-5 md:py-3 md:text-xl md:rounded-full  rounded-xl p-2 text-base hover:bg-gray-200 duration-200'>Contact Me</Link>
                 </div>
             </div>
         </div>
