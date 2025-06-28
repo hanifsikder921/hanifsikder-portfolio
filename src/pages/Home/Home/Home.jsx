@@ -3,6 +3,7 @@ import Hero from '../Hero/Hero';
 import Framework from '../Framework/Framework';
 import MyService from '../Service/MyService';
 import MyLatestProject from '../LatestProject/MyLatestProject';
+import MyEducation from '../MyEducation/MyEducation';
 
 const Home = () => {
     return (
@@ -15,6 +16,8 @@ const Home = () => {
            <MyService/>
 
            <MyLatestProject/>
+
+           <MyEducation/>
 
         </div>
     );

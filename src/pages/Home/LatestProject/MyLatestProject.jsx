@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import { IoIosCloseCircle } from "react-icons/io";
+
 
 const MyLatestProject = () => {
     const [projects, setProjects] = useState([]);
@@ -44,9 +46,9 @@ const MyLatestProject = () => {
                                 title="Live Project Preview"
                                 className="w-full h-full border-0"
                             ></iframe>
-                            <div className="modal-action absolute top-2 right-2">
-                                <label htmlFor="livePreviewModal" className="btn btn-sm" onClick={() => setSelectedProject(null)}>
-                                    ✕
+                            <div className="modal-action absolute -top-6 right-0 ">
+                                <label htmlFor="livePreviewModal" className="btn btn-sm hover:bg-red-200" onClick={() => setSelectedProject(null)}>
+                                    <IoIosCloseCircle size={30} className='hover:text-red-500'/>
                                 </label>
                             </div>
                         </div>
