@@ -70,7 +70,7 @@ const ContactForm = () => {
                     {/* Title */}
                     <div className="max-w-3xl mb-10 lg:mb-14">
                         <h2 data-aos="flip-up"  className="text-emerald-600 font-semibold text-2xl md:text-4xl md:leading-tight">Let's Work Together</h2>
-                        <p data-aos="zoom-out" className="mt-1 text-neutral-500">
+                        <p data-aos="zoom-in" className="mt-1 text-neutral-500">
                             Whether you're looking for a passionate MERN Stack Developer or a reliable frontend engineer — I'm just one message away!
                         </p>
                     </div>
@@ -80,9 +80,8 @@ const ContactForm = () => {
                         {/* FORM START */}
                         <div className="md:order-2 border-b border-neutral-800 pb-10 mb-10 md:border-b-0 md:pb-0 md:mb-0">
                             <form onSubmit={handleSubmit(onSubmit)}>
-                                <div data-aos="fade-left"
-                                    data-aos-offset="300"
-                                    data-aos-easing="ease-in-sine"
+                                <div data-aos="zoom-in"
+                                   
                                      className="space-y-4">
                                     {/* Name */}
                                     <div className="relative">

@@ -5,9 +5,9 @@ const FaqSection = () => {
   return (
     <div id='faq-section' className="max-w-7xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-10 items-center">
       {/* Left: Image */}
-      <div data-aos="fade-left"
-        data-aos-offset="300"
-        data-aos-easing="ease-in-sine">
+      <div data-aos="fade-up"
+       
+        >
         <img src={faqImage} alt="FAQ Illustration" className="w-full rounded-lg shadow-md" />
       </div>
 
