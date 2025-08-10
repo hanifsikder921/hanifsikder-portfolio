@@ -64,7 +64,7 @@ const ContactForm = () => {
 
 
     return (
-        <div id='contact-section' className='my-20  bg-gray-100'>
+        <div id='contact-section' className='my-20  bg-gray-50'>
             <div >
                 <div className="py-10 lg:py-20 max-w-7xl mx-auto px-6 ">
                     {/* Title */}

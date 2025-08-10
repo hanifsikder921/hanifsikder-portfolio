@@ -13,7 +13,7 @@ const MyServices = () => {
 
 
     return (
-        <div id="service-section" className="py-10 bg-gray-100 md:my-20 my-15 rounded-lg">
+        <div id="service-section" className="py-10 bg-gray-50 md:my-20 my-15 rounded-lg">
             <h2 data-aos="flip-left" className="text-3xl font-bold text-center mb-5 text-emerald-600">My Services</h2>
             <p data-aos="zoom-in" className="text-center text-gray-600 md:max-w-4xl mx-auto mb-8">
                 I offer a wide range of web development services, from responsive frontend design to full-stack MERN applications. With hands-on experience and a focus on performance and scalability, I build solutions tailored to your needs.

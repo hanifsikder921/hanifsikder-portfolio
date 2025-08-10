@@ -4,7 +4,7 @@ import aboutImage from '../../assets/aboutPhoto.jpg'; // এখানে আপ�
 
 const About = () => {
     return (
-        <div id='about-section' className='bg-gray-100 rounded-lg my-15 py-10'>
+        <div id='about-section' className='bg-gray-50 rounded-lg my-15 py-10'>
             <div className="max-w-7xl mx-auto px-4 py-16 flex flex-col-reverse md:flex-row  justify-between gap-5">
 
 

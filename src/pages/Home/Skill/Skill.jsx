@@ -87,7 +87,7 @@ const Skill = () => {
   };
 
   return (
-    <div className="p-4 md:p-8">
+    <div className="p-4 md:p-8 shadow my-8 md:my-16 rounded-lg">
       <motion.h2
         className="text-3xl font-bold mb-8 text-center text-emerald-600"
         initial={{ opacity: 0, y: -20 }}
@@ -96,6 +96,11 @@ const Skill = () => {
       >
         Professional Skills
       </motion.h2>
+      <p className="text-center md:w-7/12 mx-auto mb-5">
+        I specialize in modern web development technologies with expertise across the full stack.
+        Each skill represents hands-on experience building production-ready applications, with a
+        focus on performance, maintainability, and user experience.
+      </p>
 
       <motion.div
         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"

@@ -13,7 +13,7 @@ const MyLatestProject = () => {
     }, []);
 
     return (
-        <div id='projects-section' className="py-10 bg-gray-100 rounded-lg ">
+        <div id='projects-section' className="py-10 bg-gray-50 rounded-lg ">
             <h2 data-aos="flip-left" className="md:text-3xl text-2xl font-bold text-center mb-10 text-emerald-600">My Latest Projects</h2>
             <p className="text-center text-gray-600 md:max-w-2xl  mx-auto mb-8">
                 Here are some of my recent web development projects that showcase my skills in frontend and full-stack development.
