@@ -5,7 +5,7 @@ const CustomButton = ({ text, cvUrl }) => {
     // Create a temporary anchor element
     const link = document.createElement('a');
     link.href = cvUrl;
-    link.download = 'Hanif_Sikder_CV.pdf'; // You can set the default filename here
+    link.download = 'Hanif_Sikder_CV.pdf'; 
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -21,7 +21,7 @@ const CustomButton = ({ text, cvUrl }) => {
       <span className="absolute left-0 top-0 h-0 w-full bg-emerald-600 opacity-100 group-hover:h-full group-hover:top-0 transition-all duration-300 ease-in-out"></span>
 
       {/* Text layer */}
-      <span className="relative z-10">{text}</span>
+      <span className="relative z-10 cursor-pointer">{text}</span>
     </button>
   );
 };

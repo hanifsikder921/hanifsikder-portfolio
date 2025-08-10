@@ -11,7 +11,7 @@ import About from '../../About/About';
 
 const Home = () => {
     return (
-        <div className='w-11/12 mx-auto md:px-2'>
+        <div className='w-11/12 md:max-w-7xl mx-auto md:px-2'>
 
            <Hero/>
 

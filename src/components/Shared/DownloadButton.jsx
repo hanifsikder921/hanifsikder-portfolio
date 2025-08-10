@@ -10,7 +10,7 @@ const DownloadButton = ({ text, location }) => {
     >
       <span className="absolute left-0 top-0 block h-0 w-full transition-all bg-indigo-600 opacity-100 group-hover:h-full group-hover:top-0 duration-400 ease"></span>
 
-      <span className="absolute right-0 flex items-center justify-start w-10 h-10 duration-300 transform translate-x-full group-hover:translate-x-0 ease">
+      <span className="absolute right-0 flex items-center justify-start w-10 h-10 duration-300 transform translate-x-full group-hover:translate-x-0 ease ">
         <svg
           className="w-5 h-5"
           fill="none"
@@ -27,7 +27,7 @@ const DownloadButton = ({ text, location }) => {
         </svg>
       </span>
 
-      <span className="relative z-10">{text}</span>
+      <span className="relative z-10 cursor-pointer">{text}</span>
     </ScrollLink>
   );
 };

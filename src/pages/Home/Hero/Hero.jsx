@@ -16,7 +16,7 @@ const Hero = () => {
                 <motion.img
                     src={profileImage}
                     alt="Hanif Sikder Image"
-                    className="w-full max-w-[200px] rounded-full shadow shadow-emerald-300 md:max-w-[400px] mx-auto"
+                    className="w-full max-w-[200px] rounded-full shadow shadow-emerald-300 md:max-w-[400px] mx-auto md:my-0 my-8"
                     animate={{ x: [-10, 10, -10] }}
                     transition={{
                         repeat: Infinity,
@@ -61,7 +61,7 @@ const Hero = () => {
                 </p>
 
                 <div className='gap-2 flex w-full flex-col md:flex-row'>
-                    <CustomButton text={'Download Cv'} cvUrl={cvUrl} />
+                    <CustomButton text={'Download Resume'} cvUrl={cvUrl} />
                     <DownloadButton text={'Hire Me'} location={'contact-section'} />
                 </div>
             </section>
