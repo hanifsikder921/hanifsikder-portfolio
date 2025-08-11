@@ -1,62 +1,102 @@
 import React, { useEffect, useState } from 'react';
-import { IoIosCloseCircle } from "react-icons/io";
-
+import { Link } from 'react-router';
+import { FaExternalLinkAlt, FaInfoCircle } from 'react-icons/fa';
 
 const MyLatestProject = () => {
-    const [projects, setProjects] = useState([]);
-    const [selectedProject, setSelectedProject] = useState(null);
+  const [projects, setProjects] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(null);
 
-    useEffect(() => {
-        fetch('/projects.json')
-            .then(res => res.json())
-            .then(data => setProjects(data));
-    }, []);
+  useEffect(() => {
+    const fetchProjects = async () => {
+      try {
+        const response = await fetch('/projects.json');
+        if (!response.ok) {
+          throw new Error('Failed to fetch projects');
+        }
+        const data = await response.json();
+        setProjects(data.slice(0, 3)); // Show only 3 latest projects
+      } catch (err) {
+        setError(err.message);
+      } finally {
+        setIsLoading(false);
+      }
+    };
 
+    fetchProjects();
+  }, []);
+
+  if (isLoading) {
     return (
-        <div id='projects-section' className="py-10 bg-gray-50 rounded-lg ">
-            <h2 data-aos="flip-left" className="md:text-3xl text-2xl font-bold text-center mb-10 text-emerald-600">My Latest Projects</h2>
-            <p className="text-center text-gray-600 md:max-w-2xl  mx-auto mb-8">
-                Here are some of my recent web development projects that showcase my skills in frontend and full-stack development.
-            </p>
-
-
-            <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-6 px-4  mx-auto">
-                {projects.map(project => (
-                    <div data-aos="zoom-in" key={project.id} className="bg-white rounded-lg shadow p-4 flex flex-col items-center text-center">
-                        <img src={project.image} alt={project.title} className="w-full max-h-96 object-cover rounded mb-4" />
-                        <h3 className="text-xl font-semibold text-emerald-600">{project.title}</h3>
-                        <button
-                            onClick={() => setSelectedProject(project)}
-                            className="btn btn-sm btn-outline btn-primary mt-3"
-                        >
-                            Live Preview
-                        </button>
-                    </div>
-                ))}
-            </div>
-
-         
-            {selectedProject && (
-                <>
-                    <input type="checkbox" id="livePreviewModal" className="modal-toggle" checked readOnly />
-                    <div className="modal">
-                        <div className="modal-box max-w-[90%] w-full h-[80vh] p-0 overflow-hidden">
-                            <iframe
-                                src={selectedProject.liveLink}
-                                title="Live Project Preview"
-                                className="w-full h-full border-0"
-                            ></iframe>
-                            <div className="modal-action absolute -top-6 right-0 ">
-                                <label htmlFor="livePreviewModal" className="btn btn-sm hover:bg-red-200" onClick={() => setSelectedProject(null)}>
-                                    <IoIosCloseCircle size={30} className='hover:text-red-500'/>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                </>
-            )}
-        </div>
+      <div className="flex justify-center items-center min-h-[200px]">
+        <div className="animate-spin rounded-full h-10 w-10 border-t-2 border-b-2 border-emerald-500"></div>
+      </div>
     );
+  }
+
+  if (error) {
+    return <div className="text-center py-10 text-red-500">Error loading projects: {error}</div>;
+  }
+
+  return (
+    <section id="projects-section" className="py-12 bg-gray-50 shadow rounded-lg">
+      <div className="max-w-6xl mx-auto px-4">
+        <h2 className="text-3xl font-bold text-center mb-6 text-emerald-600">My Latest Projects</h2>
+        <p className="text-center text-gray-600 max-w-2xl mx-auto mb-10">
+          Here are some of my recent web development projects that showcase my skills in frontend
+          and full-stack development.
+        </p>
+
+        <div className="grid md:grid-cols-3 gap-8">
+          {projects.map((project) => (
+            <div
+              key={project.id}
+              className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col h-full"
+            >
+              <img src={project.image} alt={project.title} className="w-full h-48 object-cover" />
+              <div className="p-6 flex flex-col flex-grow">
+                <h3 className="text-xl font-semibold text-gray-800 mb-2">{project.title}</h3>
+                <p className="text-gray-600 mb-4">{project.shortDescription}</p>
+
+                <div className="mt-auto">
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {project.technologies.slice(0, 3).map((tech, index) => (
+                      <span
+                        key={index}
+                        className="px-2 py-1 bg-gray-100 text-gray-800 rounded-full text-xs font-medium"
+                      >
+                        {tech.name}
+                      </span>
+                    ))}
+                  </div>
+
+                  <div className="flex gap-3">
+                    <a
+                      href={project.liveLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1 flex items-center justify-center px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded transition-colors text-sm"
+                    >
+                      <FaExternalLinkAlt className="mr-2" />
+                      Live
+                    </a>
+
+                    <Link
+                      to={`/project/${project.id}`}
+                      className="flex-1 flex items-center justify-center px-4 py-2 border border-emerald-600 text-emerald-600 hover:bg-emerald-50 rounded transition-colors text-sm"
+                    >
+                      <FaInfoCircle className="mr-2" />
+                      Details
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default MyLatestProject;

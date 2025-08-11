@@ -1,5 +1,5 @@
 import React from 'react';
-import aboutImage from '../../assets/aboutPhoto.jpg'; // এখানে আপনার ইমেজ বসাবেন
+import aboutImage from '../../assets/aboutPhoto.jpg'; 
 
 
 const About = () => {

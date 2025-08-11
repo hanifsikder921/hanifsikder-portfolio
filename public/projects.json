@@ -1,26 +1,223 @@
 [
   {
     "id": 1,
-    "title": "Knowledge Platform",
+    "title": "Knowspire - Knowledge Sharing Platform",
     "image": "https://i.ibb.co/qMQ10bpk/Screenshot-2025-06-28-172702.png",
-    "liveLink": "https://knowspire-49d88.web.app/"
+    "shortDescription": "Interactive knowledge-sharing platform with rich content features",
+    "description": "A comprehensive knowledge-sharing platform where users can post, read, and interact with educational content. Features include advanced authentication, content management systems, and community engagement tools with a focus on educational content dissemination.",
+    "technologies": [
+      { "name": "React", "purpose": "Frontend framework" },
+      { "name": "Node.js", "purpose": "Backend runtime" },
+      { "name": "Express.js", "purpose": "Backend framework" },
+      { "name": "MongoDB", "purpose": "Database" },
+      { "name": "Firebase Auth", "purpose": "User authentication" },
+      { "name": "Tailwind CSS", "purpose": "Styling framework" },
+      { "name": "JWT", "purpose": "Secure API communication" },
+      { "name": "jodit-react", "purpose": "Rich text editor" },
+      { "name": "Framer Motion", "purpose": "Animations" }
+    ],
+    "features": [
+      "Custom 404 Not Found page with illustrations",
+      "JWT authentication for API & private routes",
+      "Light/Dark theme toggle functionality",
+      "Server-side article filtering by category/tags",
+      "Rich text editor for content creation",
+      "User profile management system",
+      "Interactive animations with Framer Motion",
+      "Responsive design with Tailwind CSS",
+      "Content voting and ranking system",
+      "Secure environment variable configuration"
+    ],
+    "liveLink": "https://knowspire-49d88.web.app/",
+    "githubClient": "https://github.com/hanifsikder921/knowspire",
+    "uiPackages": [
+      "daisyui",
+      "sweetalert2",
+      "react-icons",
+      "react-slick",
+      "lottie-react",
+      "typewriter-effect",
+      "react-spinners"
+    ],
+    "challenges": [
+      "Implementing secure JWT authentication flow",
+      "Creating real-time content updates without refresh",
+      "Managing rich text content storage and rendering",
+      "Implementing theme persistence across sessions",
+      "Optimizing performance for media-rich content"
+    ],
+    "solutions": [
+      "Custom middleware for JWT verification",
+      "WebSocket implementation for real-time updates",
+      "MongoDB GridFS for rich text storage",
+      "LocalStorage for theme persistence",
+      "Lazy loading and code splitting implementation"
+    ],
+    "futurePlans": [
+      "AI-powered content recommendations",
+      "Advanced topic categorization with ML",
+      "User reward and badge system",
+      "Mobile application development",
+      "Collaborative editing features",
+      "Audio/video content support"
+    ],
+    "developmentDuration": "4 months",
+    "role": "Full-stack Developer",
+    "deployment": {
+      "client": "Firebase Hosting",
+      "server": "Render",
+      "database": "MongoDB Atlas"
+    },
+    "commitHistory": {
+      "client": "15+ commits in Github",
+      "server": "8+  commits in Github"
+    },
+    "securityFeatures": [
+      "Firebase config via environment variables",
+      "MongoDB URI secured in server .env",
+      "JWT token storage with HttpOnly cookies",
+      "Protected routes with role-based access"
+    ],
+    "author": {
+      "name": "Hanif Sikder",
+      "role": "Frontend Developer | MERN Stack Enthusiast"
+    }
   },
   {
     "id": 2,
-    "title": "Subscription Base Site",
-    "image": "https://i.ibb.co/xqqmp1s6/Screenshot-2025-06-28-173252.png",
-    "liveLink": "https://subnest.netlify.app/"
+    "title": "FoodCycle - Food Waste Reduction Platform",
+    "image": "https://i.ibb.co.com/5JWbg6Q/Screenshot-2025-08-11-223933.png",
+    "shortDescription": "MERN-based platform connecting restaurants, charities and users to reduce food waste",
+    "description": "A full-stack donation management platform that connects Restaurants, Charities, and General Users to reduce food waste and feed communities in need. The platform offers seamless donation, request, and approval workflows with real-time role-based dashboards.",
+    "technologies": [
+      { "name": "React", "purpose": "Frontend framework" },
+      { "name": "TailwindCSS", "purpose": "Styling framework" },
+      { "name": "Node.js", "purpose": "Backend runtime" },
+      { "name": "Express.js", "purpose": "Backend framework" },
+      { "name": "MongoDB", "purpose": "Database" },
+      { "name": "Firebase", "purpose": "Authentication" },
+      { "name": "Stripe", "purpose": "Payment processing" },
+      { "name": "JWT", "purpose": "Secure API communication" }
+    ],
+    "features": [
+      "Role-based authentication (4 user types)",
+      "Food donation management system",
+      "Donation request workflow",
+      "Admin approval system",
+      "Stripe payment integration",
+      "Real-time dashboards",
+      "Advanced search & filtering",
+      "Pickup time validation",
+      "Fully responsive design"
+    ],
+    "liveLink": "https://foodcycle-cc2df.web.app/",
+    "githubClient": "https://github.com/hanifsikder921/foodCycle",
+    "demoCredentials": {
+      "admin": { "email": "admin@gmail.com", "password": "123!He23" },
+      "charity": { "email": "foodbridge.foundation@gmail.com", "password": "123!He23" },
+      "restaurant": { "email": "spiceheaven@gmail.com", "password": "123!He23" },
+      "user": { "email": "nusratjahan.bd@gmail.com", "password": "123!He23" }
+    },
+    "challenges": [
+      "Implementing complex role-based workflows",
+      "Real-time status updates across user types",
+      "Secure payment integration with multiple stakeholders",
+      "Time-sensitive pickup scheduling validation",
+      "Managing food inventory and donation statuses"
+    ],
+    "solutions": [
+      "Custom Firebase authentication with JWT verification",
+      "Websocket implementation for real-time updates",
+      "Stripe Connect for multi-party payments",
+      "Custom time validation middleware",
+      "State management with React Context API"
+    ],
+    "futurePlans": [
+      "Mobile app development",
+      "AI-based food matching algorithm",
+      "Expiration date tracking system",
+      "Volunteer management module",
+      "Community impact analytics dashboard"
+    ],
+    "developmentDuration": "5 months",
+    "role": "Full-stack Developer",
+    "deployment": {
+      "client": "Firebase Hosting",
+      "server": "Render",
+      "database": "MongoDB Atlas"
+    }
   },
   {
     "id": 3,
     "title": "Roommate Finder Web App",
     "image": "https://i.ibb.co/35w0qLwS/Screenshot-2025-06-28-173035.png",
-    "liveLink": "https://roommate-finder-b1db3.web.app/"
-  },
-  {
-    "id": 4,
-    "title": "Doctor Appointment Portal",
-    "image": "https://i.ibb.co/23ZG6YNJ/Screenshot-2025-06-28-173442.png",
-    "liveLink": "https://assignment-m-8.netlify.app/"
+    "shortDescription": "Responsive platform for finding compatible roommates",
+    "description": "A modern web application that helps users find compatible roommates based on location, preferences, and lifestyle. Features include profile management, advanced search filters, and connection tools with a focus on user experience and security.",
+    "technologies": [
+      { "name": "React", "purpose": "Frontend framework" },
+      { "name": "Tailwind CSS", "purpose": "Styling and responsive design" },
+      { "name": "Node.js", "purpose": "Backend runtime (optional)" },
+      { "name": "Express.js", "purpose": "Backend framework (optional)" },
+      { "name": "MongoDB", "purpose": "Database (optional)" },
+      { "name": "Firebase", "purpose": "Authentication and realtime features" },
+      { "name": "JWT", "purpose": "Secure API communication (optional)" }
+    ],
+    "features": [
+      "User profile creation and management",
+      "Location-based search with filters",
+      "Modern responsive UI/UX",
+      "Firebase/JWT authentication",
+      "MongoDB data storage (optional)",
+      "Profile verification system",
+      "Compatibility matching algorithm",
+      "Mobile-first design approach"
+    ],
+    "liveLink": "https://roommate-finder-b1db3.web.app/",
+    "githubClient": "https://github.com/hanifsikder921/roommate-finder",
+    "deployment": {
+      "platform": "Netlify",
+      "status": "Production",
+      "alternateLink": "https://assignment-m-8.netlify.app"
+    },
+    "developmentSetup": {
+      "cloneCommand": "git clone https://github.com/hanifsikder921/roommate-finder.git",
+      "installCommand": "npm install",
+      "tailwindCommand": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch",
+      "runCommand": "npm run dev",
+      "localUrl": "http://localhost:5173"
+    },
+    "challenges": [
+      "Implementing accurate geolocation services",
+      "Creating responsive design for all devices",
+      "Developing secure authentication flow",
+      "Building efficient search algorithms",
+      "Optimizing performance for large user bases"
+    ],
+    "solutions": [
+      "Integrated mapping APIs for location services",
+      "Tailwind CSS for responsive design",
+      "Firebase Auth with optional JWT verification",
+      "Indexed database queries for search",
+      "Lazy loading and code splitting"
+    ],
+    "futurePlans": [
+      "AI-powered compatibility scoring",
+      "Enhanced security verification",
+      "Roommate agreement generator",
+      "Mobile application development",
+      "Review and rating system"
+    ],
+    "developmentDuration": "5 months",
+    "role": "Full-stack Developer",
+    "author": {
+      "name": "Md Hanif Sikder",
+      "email": "mdhanifsikderpersonal@gmail.com",
+      "portfolio": "https://hanifsikder.com",
+      "linkedin": "https://linkedin.com/in/hanifsikder920"
+    },
+    "documentation": {
+      "readme": "Available in GitHub repository",
+      "apiDocs": "Optional backend documentation"
+    }
   }
 ]

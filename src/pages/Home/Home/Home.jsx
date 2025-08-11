@@ -8,7 +8,7 @@ import PricingTable from '../Pricing/PricingTable';
 import ContactForm from '../ContactForm/ContactForm';
 import FaqSection from '../FaqSection/FaqSection';
 import About from '../../About/About';
-import { FaLinkedinIn, FaGithub, FaFacebookF } from 'react-icons/fa';
+import { FaLinkedinIn, FaGithub, FaFacebookF, FaWhatsapp } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 import { Link } from 'react-router';
 import Skill from '../Skill/Skill';
@@ -38,6 +38,13 @@ const Home = () => {
             className="text-xl  hover:text-blue-700"
           >
             <FaGithub />
+          </Link>
+          <Link
+            to="https://api.whatsapp.com/send?phone=8801609949558"
+            target="_blank"
+            className="text-xl  hover:text-blue-700"
+          >
+            <FaWhatsapp />
           </Link>
           <Link
             to="https://x.com/hanifsikder920"
