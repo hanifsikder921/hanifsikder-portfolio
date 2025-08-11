@@ -39,7 +39,7 @@ const MyLatestProject = () => {
   }
 
   return (
-    <section id="projects-section" className="py-12 bg-gray-50 shadow rounded-lg">
+    <section id="projects-section" className="py-12 bg-emerald-500/5 shadow rounded-lg">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-6 text-emerald-600">My Latest Projects</h2>
         <p className="text-center text-gray-600 max-w-2xl mx-auto mb-10">

@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaReact, FaJs, FaNodeJs, FaHtml5, FaCss3Alt, FaDatabase } from 'react-icons/fa';
+import { FaReact, FaJs, FaNodeJs, FaHtml5, FaCss3Alt } from 'react-icons/fa';
 import { SiFirebase, SiExpress, SiTailwindcss, SiMongodb } from 'react-icons/si';
 
 const Skill = () => {
@@ -87,7 +87,7 @@ const Skill = () => {
   };
 
   return (
-    <div className="p-4 md:p-8 shadow my-8 md:my-16 rounded-lg">
+    <div className="p-4 md:p-8 shadow bg-emerald-500/5 my-8 md:my-16 rounded-lg">
       <motion.h2
         className="text-3xl font-bold mb-8 text-center text-emerald-600"
         initial={{ opacity: 0, y: -20 }}

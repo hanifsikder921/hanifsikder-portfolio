@@ -91,7 +91,7 @@
     "description": "A full-stack donation management platform that connects Restaurants, Charities, and General Users to reduce food waste and feed communities in need. The platform offers seamless donation, request, and approval workflows with real-time role-based dashboards.",
     "technologies": [
       { "name": "React", "purpose": "Frontend framework" },
-      { "name": "TailwindCSS", "purpose": "Styling framework" },
+      { "name": "Tailwind CSS", "purpose": "Styling framework" },
       { "name": "Node.js", "purpose": "Backend runtime" },
       { "name": "Express.js", "purpose": "Backend framework" },
       { "name": "MongoDB", "purpose": "Database" },

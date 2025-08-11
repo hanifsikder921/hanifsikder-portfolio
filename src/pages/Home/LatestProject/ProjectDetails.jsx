@@ -19,6 +19,7 @@ import {
   FaNodeJs,
 } from 'react-icons/fa';
 import { RiFirebaseFill } from 'react-icons/ri';
+import { FaStripe } from 'react-icons/fa6';
 
 const ProjectDetails = () => {
   const { id } = useParams();
@@ -187,6 +188,7 @@ const ProjectDetails = () => {
                   {tech.name === 'Firebase' && <RiFirebaseFill />}
                   {tech.name === 'Tailwind CSS' && <FaCode />}
                   {tech.name === 'JWT' && <FaLock />}
+                  {tech.name === 'Stripe' && <FaStripe />}
                   {tech.name === 'jodit-react' && <FaCode />}
                   {tech.name === 'Framer Motion' && <FaMobile />}
                 </div>
