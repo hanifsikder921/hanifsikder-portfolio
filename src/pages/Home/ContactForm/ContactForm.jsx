@@ -156,7 +156,7 @@ const ContactForm = () => {
                   </div>
                   <div className="ml-4">
                     <h4 className="text-lg font-medium text-gray-900 mb-3">Connect With Me</h4>
-                    <div className="flex space-x-4 bg-white shadow mx-auto mt-5 p-3 rounded-lg">
+                    <div className="flex md:space-x-4 space-x-2 bg-white shadow  mt-5 md:p-3 p-2 rounded-lg ">
                       <a
                         href="https://www.facebook.com/hanifsikder922"
                         target="_blank"
