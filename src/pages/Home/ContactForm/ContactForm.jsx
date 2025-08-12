@@ -138,25 +138,27 @@ const ContactForm = () => {
                 </div>
 
                 {/* Social Links - Now inside space-y-6 container */}
-                <div className="flex items-start pt-2 ">
-                  <div className="flex-shrink-0 bg-emerald-100 rounded-lg p-3">
-                    <svg
-                      className="h-6 w-6 text-emerald-600"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
-                      />
-                    </svg>
-                  </div>
-                  <div className="ml-4">
+                <div>
+                  <div className="flex items-center gap-3  ">
+                    <div className="flex-shrink-0 bg-emerald-100 rounded-lg p-3">
+                      <svg
+                        className="h-6 w-6 text-emerald-600"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
+                        />
+                      </svg>
+                    </div>
                     <h4 className="text-lg font-medium text-gray-900 mb-3">Connect With Me</h4>
-                    <div className="flex md:space-x-4 space-x-2 bg-white shadow  mt-5 md:p-3 p-2 rounded-lg ">
+                  </div>
+                  <div >
+                    <div className="flex md:space-x-4 space-x-2 bg-white shadow  mt-5 md:p-3 p-2 rounded-lg place-items-center place-content-center ">
                       <a
                         href="https://www.facebook.com/hanifsikder922"
                         target="_blank"
